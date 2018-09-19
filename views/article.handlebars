@@ -1,0 +1,37 @@
+<div> 
+  <h3>{{articles.title}}</h3>
+  <p><a href="https://www.sciencedaily.com{{articles.link}}" target="_blank">{{articles.summary}}</a></p>
+</div>
+
+
+<div>
+   <form action="/articles/{{articles._id}}" method="POST">
+    <h5>Comment on this Article:</h5>
+    <br>
+    Author:
+      <input type="text" name="author" placeholder="author">
+      <br>
+      <input type="text" name="body" placeholder="comment">
+      <br>
+      <br>
+       <!-- Submit Button -->
+      <input type="submit" value="Submit">
+      
+   </form>
+</div>
+
+{{!-- comments go here --}}
+<div>
+  <h5>Comments:</h5>
+    {{#if articles.note}}
+    {{#each articles.note}}
+    <div id="authorNote">
+    <p>{{author}}</p>
+    <p>{{body}}</p>
+    </div>
+    {{/each}}
+    {{else}}
+    <p>No Comments Yet.</p>
+    {{/if}}
+    
+</div>

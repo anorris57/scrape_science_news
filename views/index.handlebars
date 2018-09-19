@@ -1,0 +1,16 @@
+<div>
+  <h1>Read the latest articles from 'Science News'</h1>
+  <a href="">Scrape to get latest articles</a>
+</div>
+<br>
+<br>
+<ul>
+  {{#each articles}}
+    <li>
+      <p>Title: {{this.title}}</p>
+      <p>Summary: {{this.summary}}</p>
+      <p>Link: {{this.link}}</p>
+      <p><a href="/articles/{{this._id}}">Add Comment</a></p>
+    </li>
+  {{/each}}
+</ul>
