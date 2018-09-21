@@ -1,22 +1,30 @@
 {
-  "name": "science_newshbrs",
+  "name": "scrape_science_news",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create a web app that lets users view and leave comments on the latest news (scrape news from another site).",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anorris57/scrape_science_news.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anorris57/scrape_science_news/issues"
+  },
+  "homepage": "https://github.com/anorris57/scrape_science_news#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "mongoose": "^5.2.15",
+    "mongoose": "^5.2.16",
     "morgan": "^1.9.1"
   }
 }
